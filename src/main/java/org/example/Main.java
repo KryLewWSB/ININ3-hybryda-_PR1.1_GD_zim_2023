@@ -12,7 +12,7 @@ public class Main {
             String miesiac = scan.next();
 
             if(miesiac.equals("x")) break;
-
+            //if(miesiac == "1")    if(miesiac.equals("1"))
             switch (miesiac) {
                 case "1" -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Styczeń!");
                 case "2" -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Luty!");
