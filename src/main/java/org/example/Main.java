@@ -1,18 +1,22 @@
 package org.example;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
+        int a = -1, b = -11, c = 12;
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Proszę podać liczbę, która ma zostać spotęgowana: [zatwierdź enterem]");
-        int wartosc1 = scan.nextInt(); //pobiera pierwszą wartość z konsoli
-        System.out.println("Proszę podać liczbę, do której potęgi chcesz podnieść liczbę: " + wartosc1 + " [zatwierdź enterem]");
-        int wartosc2 = scan.nextInt(); //pobiera drugą wartość z konsoli
+        double delta = Math.pow(b, 2) - 4 * a * c;  // (b * b) - 4 * a * c
+        System.out.println("Delta jest równa = " + delta);
 
-        int liczba2 = (int) Math.pow(wartosc1, wartosc2);
-        System.out.println( "Liczba " + wartosc1 + " podniesiona do potęgi: " + wartosc2 + " jest równa: " + liczba2 );
-
+        if(delta < 0){
+            System.out.println("Brak miejsc zerowych (delta < 0)");
+        } else if (delta == 0) {
+            double x0 = -b / (2 * a);
+            System.out.println("Jedno miejsce zerowe delta = 0!\nx0 = " +x0);
+        } else if (delta > 0) {
+            double x1 = (-b - Math.sqrt(delta)) / (2 * a);
+            double x2 = (-b + Math.sqrt(delta)) / (2 * a);
+            System.out.println("Delta większa od 0!\nx1 = " + x1 +
+                               "\nx2 = " + x2);
+        }
     }
 }
