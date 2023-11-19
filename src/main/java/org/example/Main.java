@@ -9,12 +9,9 @@ public class Main {
 
         System.out.println("Podaj liczbę do sprawdzenia: [Zatwierdź enterem]");
         int input = scan.nextInt();
-        //Za pomocą instrukcji warunkowej:
-        if(input % 2 == 0){
-            System.out.println("Liczba " + input + " jest parzysta!");
-        }else{
-            System.out.println("Liczba " + input + " jest nieparzysta!");
-        }
+        //Za pomocą operatora warunkowego:
+        System.out.println( input % 2 == 0 ? "Liczba " + input + " jest parzysta!" : "Liczba " + input + " jest nieparzysta!");
+
 
 
     }
