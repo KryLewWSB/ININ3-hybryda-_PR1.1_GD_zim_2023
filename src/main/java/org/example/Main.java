@@ -11,44 +11,19 @@ public class Main {
         int miesiac = scan.nextInt();
 
         switch (miesiac){
-            case 1:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Styczeń!");
-                break;
-            case 2:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Luty!");
-                break;
-            case 3:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Marzec!");
-                break;
-            case 4:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Kwiecień!");
-                break;
-            case 5:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Maj!");
-                break;
-            case 6:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Czerwiec!");
-                break;
-            case 7:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Lipiec!");
-                break;
-            case 8:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Sierpień!");
-                break;
-            case 9:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Wrzesień!");
-                break;
-            case 10:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Październik!");
-                break;
-            case 11:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Listopad!");
-                break;
-            case 12:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Grudzień!");
-                break;
-            default:
-                System.out.println("Podałeś liczbę: " + miesiac + " jest to niepoprawna wartość!");
+            case 1 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Styczeń!");
+            case 2 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Luty!");
+            case 3 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Marzec!");
+            case 4 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Kwiecień!");
+            case 5 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Maj!");
+            case 6 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Czerwiec!");
+            case 7 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Lipiec!");
+            case 8 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Sierpień!");
+            case 9 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Wrzesień!");
+            case 10 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Październik!");
+            case 11 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Listopad!");
+            case 12 -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Grudzień!");
+            default -> System.out.println("Podałeś liczbę: " + miesiac + " jest to niepoprawna wartość!");
         }
 
 
