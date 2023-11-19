@@ -14,7 +14,11 @@ public class Main {
             if(miesiac.equals("x")) break;
             //if(miesiac == "1")    if(miesiac.equals("1"))
             switch (miesiac) {
-                case "1" -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Styczeń!");
+                case "1" -> {
+                    System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Styczeń!");
+                    System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Styczeń!");
+                    System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Styczeń!");
+                }
                 case "2" -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Luty!");
                 case "3" -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Marzec!");
                 case "4" -> System.out.println("Podałeś liczbę: " + miesiac + " jest to miesiąć Kwiecień!");
