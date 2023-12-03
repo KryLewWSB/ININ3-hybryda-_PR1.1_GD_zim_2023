@@ -7,15 +7,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int[] tablicaLiczba = new int[5]; //deklaracja tablicy intów o długości 5
+        int[] tablicaLiczba = {1, 2, 3, 4}; //deklaracja tablicy intów i przypisanie elementów
 
-        tablicaLiczba[2] = 5;
 
-        // 1 sposób wypisania tablicy:
-        for(int liczba : tablicaLiczba){
-            System.out.println(liczba);
-        }
-
-        System.out.println( Arrays.toString( tablicaLiczba ) ); //2 sposób wypisania
+        System.out.println( Arrays.toString( tablicaLiczba ) ); //sposób wypisania
     }
 }
