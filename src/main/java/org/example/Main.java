@@ -6,26 +6,31 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-        /* Zadanie 18. Kalkulator podatku dochodowego:
-            Napisz program, który na podstawie dochodu użytkownika obliczy należny podatek dochodowy.*/
+        /* Zadanie 22 */
         Scanner scan = new Scanner(System.in);
-        System.out.println("Wprowadź swój dochód za dany rok: ");
-        float dochod = scan.nextFloat();
-        int kwota = 120_000;
 
-        if(dochod < kwota){
-            System.out.println("Podatek do zapłacenia: " + (dochod * 0.12));
-        } else if (dochod > kwota) {
-            double pierwszyProgPodatkowy = kwota * 0.12;
-            double drugiProgPodatkowy = (dochod - kwota) * 0.32;
+        while(true) {
+            System.out.println("Podaj liczbę 1: ");
+            int liczba1 = scan.nextInt();
+            System.out.println("Podaj liczbę 2: ");
+            int liczba2 = scan.nextInt();
+            System.out.println("Podaj operator (+,-,*,/): ");
+            String operator = scan.next();
 
-            double ileDoZaplaty = pierwszyProgPodatkowy + drugiProgPodatkowy;
-            System.out.println("Zaliczasz się do drugiego progu podatkowego, musisz zapłacić: " + ileDoZaplaty );
-            System.out.println("12 % podatku od kwoty 120 000 zł: " + pierwszyProgPodatkowy);
-            System.out.println("32 % podatku od kwoty " + (dochod - kwota) + " wynosi: " + drugiProgPodatkowy);
+            switch (operator) {
+                case "+" -> System.out.println("Wynik dodawania: " + liczba1 + " + " + liczba2 + " = " + (liczba1 + liczba2));
+                case "-" -> System.out.println("Wynik odejmowania: " + liczba1 + " - " + liczba2 + " = " + (liczba1 - liczba2));
+                case "*" -> System.out.println("Wynik mnożenia: " + liczba1 + " * " + liczba2 + " = " + (liczba1 * liczba2));
+                case "/" -> System.out.println("Wynik dodawania: " + liczba1 + " / " + liczba2 + " = " + (liczba1 / liczba2));
+            }
+
+            System.out.println("Jeśli chcesz kontynować kliknij T a jeśli nie to N.");
+            String czyKontynuowac = scan.next();
+            if(czyKontynuowac.equals("N") || czyKontynuowac.equals("n") || czyKontynuowac.equals("x")) break;
 
         }
+
+
 
     }
 }
