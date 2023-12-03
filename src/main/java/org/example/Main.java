@@ -7,9 +7,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int[] tablicaLiczba = {1, 2, 3, 4}; //deklaracja tablicy intów i przypisanie elementów
 
+        int tablica[] = {1, 2, 3};
+        for(int i = 0; i < tablica.length; i++){
+            System.out.println("tab[" + i + "] = " + tablica[i]);
+        }
 
-        System.out.println( Arrays.toString( tablicaLiczba ) ); //sposób wypisania
+        for (int liczba : tablica){
+            System.out.println(liczba);
+        }
     }
 }
