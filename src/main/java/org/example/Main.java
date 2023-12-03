@@ -6,30 +6,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        /* Zadanie 22 */
+        /* Zadanie 12 */
         Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj liczbę: ");
+        int liczba = scan.nextInt();
 
-        while(true) {
-            System.out.println("Podaj liczbę 1: ");
-            int liczba1 = scan.nextInt();
-            System.out.println("Podaj liczbę 2: ");
-            int liczba2 = scan.nextInt();
-            System.out.println("Podaj operator (+,-,*,/): ");
-            String operator = scan.next();
-
-            switch (operator) {
-                case "+" -> System.out.println("Wynik dodawania: " + liczba1 + " + " + liczba2 + " = " + (liczba1 + liczba2));
-                case "-" -> System.out.println("Wynik odejmowania: " + liczba1 + " - " + liczba2 + " = " + (liczba1 - liczba2));
-                case "*" -> System.out.println("Wynik mnożenia: " + liczba1 + " * " + liczba2 + " = " + (liczba1 * liczba2));
-                case "/" -> System.out.println("Wynik dodawania: " + liczba1 + " / " + liczba2 + " = " + (liczba1 / liczba2));
-            }
-
-            System.out.println("Jeśli chcesz kontynować kliknij T a jeśli nie to N.");
-            String czyKontynuowac = scan.next();
-            if(czyKontynuowac.equals("N") || czyKontynuowac.equals("n") || czyKontynuowac.equals("x")) break;
-
+        switch (liczba){
+            case 1, 4, 8 -> System.out.println("Liczba to 1, 4 lub 8.");
+            case 2, 3, 7 -> System.out.println("Liczba to 2, 3 lub 7.");
+            default -> System.out.println("Jakaś wartośc...");
         }
-
 
 
     }
